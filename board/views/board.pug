@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  table(border="1")
+    th(width="200px", align="center") 제목
+    th(width="1000px", align="center") 내용
+
+    -for(var i=0;i<5;i++)
+      tr
+        td(align="center")=record_title
+        td(align="center")=record_content
+
